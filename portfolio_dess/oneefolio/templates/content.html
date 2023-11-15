@@ -1,0 +1,105 @@
+t{% load static %}
+{% load oneefolio_extras %}
+<div id="content">
+			<div id="profile" class="section">
+				<div class="column col3">
+					<table id="bioinfo">
+						<tbody>
+							<tr>
+								<td class="odd">Name</td>
+								<td class="even">PatrickSang</td>
+							</tr>
+							<tr>
+								<td class="odd">Education</td>
+								<td class="even">Maseno University</td>
+							</tr>
+							<tr>
+								
+							<tr>
+								<td class="odd">Designation</td>
+								<td class="even">GIS Analyst & Developer<li>(Freelance)</li></td>
+							
+								
+		</tr>
+							<tr>
+								<td class="odd">Programing Languages</td>
+								<td class="even"><li>Python,Javascript,R</li><li>Lua,Go,java</li></td>
+							</tr>
+							<tr>
+								<td class="odd">Framemworks & libraries</td>
+								<td class="even"><li>Django,Geodjango,Geonode</li>
+									
+			<li>Geoserver,Geopandas,Django-Rest</li><li>React.js,GeoTorch,TensorFlow</li><li>GeeMap,leaflet.js,Folium</li><li>Rspatial,Sklearn</li>
+									<li>Gis Softwares:ArcGisPro,QGIS<li>SagaGIS,GrassGis 
+									GEE,Pyqgis</li></td>
+							</tr>
+							<tr>
+								<td class="odd">Databases</td>
+								<td class="even">PostgreSQL,Postgis<li>MongoDB,MySQL</li>
+							<tr>
+		
+								
+								<td class="odd">Skills</td>
+								<td class="even"><li>Spatial analysis<li>WebGis development</li><li>Geoprocessing tools Development</li><li>Containerisation with Docker</li><li>Data Analysis,<li>Mlops &
+									CI/CD implementation</li><li>Geodatabase Development,Remote sensing & Digital map development</li><li>Data Management</li>
+
+							     <li>Version control using: Github,Git,Jenkins</li>
+								</tr>
+							<tr>
+							
+								<td class="odd">Interests</td>
+								<td class="even"><li>Machine Learning,</li><li>geo-deeplearning &IOT</li></td>
+								
+							</tr>
+						</tbody>
+					</table>
+					
+					<ul class="social">
+						{% for s,t in both %}
+						<li><a href="{{ s.social_links }}" class="external" target="_blank" ><img src={% static "images/icons/"|ccat:t|ccat:".png"%} alt="{{ t }}" /></a></li>						
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="own_img column col5 pl-50">
+					<img src="{% static 'images/personal/rez4.jpg' %}" alt="gisnalyst" />
+					
+<p> Hi there!&#128075 am Patrick a GIS enthuast,developer who seeks to address spatial challenges by leveraging the powers of GIS and remote sensing tools  by developing custom gis software products,geoprocesing tools to address the problem at hand.I have majorly used Gis  for Environmental monitoring through the many probono projects i have carried out .My technical interests in near future revolves around leveraging the Blockchain technology & web3 in creating smart contracts for managing resources a thing which may further inform ReFi(Regenerative finance)
+</p>
+				
+					<p><a href="#">Download pdf resume</a></p>
+				</div>
+			</div>			
+			<div id="resume" class="section">
+				<input type="checkbox" name="order" id="sorted_order"><label for="order">Check to Order&#128072</label>
+				{% include "resume.html" %}				   
+			</div> 
+			<div id="contact" class="section">
+				<div class="column col3">
+					<h3>PatrickSang</h3>
+					<p>Feel free to contact Patrick for collabarations in projects,tasks,shairing of opportunites i.e jobs,mapathons,hackathons,job offers,training opportunities. </p>
+					
+					<p>	Email: sangpatrick211@gmail.com</p>
+					<p>Address:Kisumu,Kenya</p>
+					<p>phone:+254790835786<br />
+						Mobile:+254759993540</p>
+					
+				</div>
+				<div class="column col5 pl-50">
+					<h3>Send a message</h3>
+					<form id="contactform" method="post" action="user_feedback/">						
+						{% include "feedback.html" %}						
+						<p class="column col8"><input class="button" type="submit" value="Submit" /></p>
+						<p class="column col8">{% csrf_token %}</p>
+					</form>
+				</div><!-- 
+				
+					<form id="contactform">
+						<p class="column col4"><label for="name">Name:</label><input type="text" name="name" id="name" placeholder="your name"/></p>
+						<p class="column col4"><label for="email">email:</label><input type="text" name="email" id="email" placeholder="your email "/></p>
+						<p class="column col8"><label for="message">Message:</label><textarea rows="5" name="message" id="message" placeholder="Hello Patrick.."></textarea></p>
+						<p class="column col8"><input class="button" type="button" value="Submit" /></p>
+					</form>	
+				</div> 
+			</div>-->
+		</div>
+		
