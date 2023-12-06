@@ -11,7 +11,7 @@ class get_to_know(forms.ModelForm):
         self.fields['name'].required = False
         self.fields['name'].widget = forms.TextInput(attrs={'placeholder':'your full name',})
         self.fields['email'].widget = forms.TextInput(attrs={'placeholder':'your email ID',})
-        self.fields['remarks'].widget = forms.Textarea(attrs={'placeholder':'Hey Aseem...','rows':'5',})  
+        self.fields['remarks'].widget = forms.Textarea(attrs={'placeholder':'Hey Patrick...','rows':'5',})  
     class Meta:
         model = get_feedback
         fields = "__all__"
